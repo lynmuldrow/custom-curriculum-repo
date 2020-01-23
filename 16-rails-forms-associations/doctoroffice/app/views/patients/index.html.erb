@@ -1,0 +1,25 @@
+<h1 class="display-3" style="padding-top: 30px;">Patients List</h1>
+
+<div class="container">
+    <div class="row row-cols-2">
+
+        <div class="col">
+            <h2 style="padding: 15px;">Featured Patient: Javi</h2>
+            <div style="padding: 20px;"><%= image_tag (@random_image) %></div>
+            <p>Javi is our star patient- he is here every week 'cause he's always cold. BRRR... </p>
+        </div>
+
+        <div class="col"> 
+            <ul style= "list-style-type: none;">
+                <% @patients.each do |patient| %>
+                <li style="padding-top: 20px;"><h6><%= link_to patient.name, patient %>, <%= patient.condition %></h6></li>
+                <% end %>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" style="padding-top: 30px;">
+    <h3>Need to be a new patient? Go <%= link_to "here.", new_patient_path %></h3>
+</div>

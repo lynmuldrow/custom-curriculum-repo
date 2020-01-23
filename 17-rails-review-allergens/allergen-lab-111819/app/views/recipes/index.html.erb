@@ -1,0 +1,10 @@
+<h1>Recipes</h1>
+
+
+    <%= link_to "Sort", recipes_sort_path %>
+
+<ul>
+    <% @recipes.each do |recipe| %>
+        <li><%= recipe.name %></li>
+    <% end %>
+</ul>

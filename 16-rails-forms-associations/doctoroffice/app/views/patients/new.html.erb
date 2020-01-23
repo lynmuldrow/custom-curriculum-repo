@@ -1,0 +1,21 @@
+<div class="container" style="padding-top: 30px;">
+        <h1 class="display-3" style="padding-top: 30px;">New Patients Form</h1>
+        <br/>
+        <p>Add yourself to our database using this form. </p>
+    </div>
+    
+    <div class="container" style="padding-top: 30px;">
+        <%= form_for @patient do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    
+    
+        <%= f.label :condition %>
+        <%= f.text_field :condition %>
+
+        <%= f.label "Choose your doctor..." %>
+        <%= collection_select(:patient, :doctor_id, Doctor.all, :id, :name) %>
+    
+        <%= f.submit %>
+        <% end %>
+    </div>

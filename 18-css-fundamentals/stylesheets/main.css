@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#mainHeader {
+    background: rgb(113, 75, 203);
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#mainNav {
+    background: rgb(47, 4, 55);
+    text-align: center;
+}
+
+#mainNav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mainNav li {
+    display: inline;
+    padding: 5px 10px;
+}
+
+#mainNav li:hover {
+    background: rgba(75, 8, 96, 0.885);
+}
+
+#mainNav a {
+    text-decoration: none;
+    color: rgb(174, 140, 228);
+}
+
+.bigImage {
+    background-image: url("/images/lavender.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 400px;
+    text-align: center;
+}
+
+.bigImage h1 { 
+    color: rgb(215, 203, 235);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;   
+    font-size: 60px;
+    line-height: 1.5em;
+}
+
+#main {
+    box-sizing: border-box;
+    padding: 75px;
+}
+
+#secondary {
+    background: url("/images/damask.jpg");
+    background-attachment: fixed;
+    color: white;
+    padding: 150px;
+}
+
+#secondary li {
+    display: inline;  
+    padding: 50px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+#tertiary { 
+    padding: 75px;
+}
+
+#mainFooter {
+    background: rgb(113, 75, 203);
+    padding: 20px; 
+    color: white;
+    text-align: center;   
+}
