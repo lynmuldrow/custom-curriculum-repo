@@ -26,7 +26,7 @@ Objects in code are the things that include all the logic and data required to c
 
 Objects send messages via dot notation. Using dot notation, we ask objects to perform a task by invoking a method on the object we call. The object is then the receiver, the method is the message. 
 
-In plain English, here's a object being invoked: 
+In plain English, here's an object being invoked: 
 
 ```rb
 class Person
